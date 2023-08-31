@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.boxArea{
+  width:1200px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+.header{
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  background-color: #e7e7e7;
+  border-radius: 0px 0px 30px 30px;
+}
+.header > .inputArea{
+  width: 70%;
+  height: 100%;
+  /* outline: 1px solid #000; */
+  font-weight: 600;
+  font-size: 18px;
+  float: left;
+}
+.header > .inputArea > input {
+  margin-left: 10px;
+}
+.header > .inputArea > .title{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+.header > .inputArea > .title > input,
+.header > .inputArea > .desc > input{
+  width: 300px;
+  height: 50px;
+  border: none;
+  text-indent: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.header > .inputArea > .desc{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+.header > .btnArea{
+  width: 30%;
+  height: 100%;
+  /* outline: 1px solid #000; */
+  position: relative;
+  float: left;
+}
+.header > .btnArea > button{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4b8364;
+  color: #fff;
+  position: absolute;
+  right: 60px;
+  transition: 0.3s;
+}
+.header > .btnArea > button:hover{
+  background-color: #428f64;
+  color: #000;
+  cursor: pointer;
+}
+
+.working{
+  width: 100%;
+}
+
+.working > h2, .done > h2{
+  width: 100%;
+  height: 80px;
+  line-height: 100px;
+  text-indent: 50px;
+}
+
+.working > .workingBox,
+.done > .doneBox{
+  width: 100%;
+  height: 270px;
+  overflow-y: auto;
+}
+
+.working > .workingBox >.box-style,
+.done > .doneBox >.box-style{
+  width: 100%;
+  height: 100%;
+}
+
+.working > .workingBox >.box-style > .box,
+.done > .doneBox >.box-style > div{
+  width: 280px;
+  height: 180px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+  border: 4px solid #428f64;
+  border-radius: 10px;
+  float: left;
+}
+
+.working > .workingBox >.box-style > .box > .component-style{
+  width: 100%;
+}
+
+.working > .workingBox >.box-style > .box > .btnAreaTwo
+.done > .doneBox >.box > .btnArea{
+  width: 100%;
+  height: 40px;
+  /* outline: 1px solid #000; */
+}
+.working > .workingBox >.box-style > .box > .btnAreaTwo > .del,
+.done > .doneBox > .box-style > .box > .btnAreaTwo > .del{
+  width: 130px;
+  height: 40px;
+  border: 2px solid red;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.working > .workingBox >.box-style > .box > .btnAreaTwo > .del:hover,
+.done > .doneBox > .box-style > .box > .btnAreaTwo > .del:hover{
+  background-color: rgb(172, 21, 21);
+  border: 2px solid rgb(172, 21, 21);
+  color: #fff;
+}
+.working > .workingBox >.box-style > .box > .btnAreaTwo > .chk,
+.done > .doneBox >.box-style > .box > .btnAreaTwo > .chk{
+  width: 130px;
+  height: 40px;
+  border: 2px solid green;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.working > .workingBox >.box-style > .box > .btnAreaTwo > .chk:hover,
+.done > .doneBox >.box-style > .box > .btnAreaTwo > .chk:hover{
+  background-color: green;
+  color: #fff;
+}
+
+.component-style > .titleName{
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0px;
+  font-weight: 700;
+}
+
+.component-style > .descName{
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+}
